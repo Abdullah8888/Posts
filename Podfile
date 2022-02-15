@@ -8,6 +8,7 @@ target 'Posts' do
   # Pods for Posts
   pod 'KeychainSwift', '~> 20.0'
   pod 'SDWebImage', '~> 5.0'
+  pod 'Alamofire', '~> 5.4'
 
   target 'PostsTests' do
     inherit! :search_paths
