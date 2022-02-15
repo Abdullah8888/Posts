@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		0A36512CBAC5EBF165ABB030 /* Pods_PostsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB77D0DDACA7541C5BC5BD4 /* Pods_PostsTests.framework */; };
+		B8A43A6B27BBC96900CD8AD7 /* PostsViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A43A6A27BBC96900CD8AD7 /* PostsViewModelTest.swift */; };
+		B8A43A6D27BBC98400CD8AD7 /* PostsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A43A6C27BBC98400CD8AD7 /* PostsViewControllerTests.swift */; };
+		B8A43A6F27BBC9FE00CD8AD7 /* NetworkServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A43A6E27BBC9FE00CD8AD7 /* NetworkServiceTest.swift */; };
+		B8A43A7127BBCA5F00CD8AD7 /* BaseViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8A43A7027BBCA5F00CD8AD7 /* BaseViewModelTest.swift */; };
 		B8DE013027BBAFBC00F1463E /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE012F27BBAFBC00F1463E /* PostsView.swift */; };
 		B8DE013227BBAFD100F1463E /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE013127BBAFD100F1463E /* PostsViewController.swift */; };
 		B8DE013427BBAFE400F1463E /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE013327BBAFE400F1463E /* PostsViewModel.swift */; };
@@ -72,6 +76,10 @@
 		4A8B408109976CD44082738A /* Pods-PostsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostsTests.release.xcconfig"; path = "Target Support Files/Pods-PostsTests/Pods-PostsTests.release.xcconfig"; sourceTree = "<group>"; };
 		85B2460D21A9AEBF1CCEEB9E /* Pods_Posts_PostsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Posts_PostsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88DB4062FD1075DE9DB4F602 /* Pods-Posts-PostsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Posts-PostsUITests.debug.xcconfig"; path = "Target Support Files/Pods-Posts-PostsUITests/Pods-Posts-PostsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B8A43A6A27BBC96900CD8AD7 /* PostsViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewModelTest.swift; sourceTree = "<group>"; };
+		B8A43A6C27BBC98400CD8AD7 /* PostsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewControllerTests.swift; sourceTree = "<group>"; };
+		B8A43A6E27BBC9FE00CD8AD7 /* NetworkServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTest.swift; sourceTree = "<group>"; };
+		B8A43A7027BBCA5F00CD8AD7 /* BaseViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModelTest.swift; sourceTree = "<group>"; };
 		B8DE012F27BBAFBC00F1463E /* PostsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
 		B8DE013127BBAFD100F1463E /* PostsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
 		B8DE013327BBAFE400F1463E /* PostsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
@@ -155,8 +163,32 @@
 				24BE12280CD0D9C965CAA7D8 /* Pods-PostsTests.debug.xcconfig */,
 				4A8B408109976CD44082738A /* Pods-PostsTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B8A43A6727BBC92B00CD8AD7 /* NetworkServiceTest */ = {
+			isa = PBXGroup;
+			children = (
+				B8A43A6E27BBC9FE00CD8AD7 /* NetworkServiceTest.swift */,
+			);
+			path = NetworkServiceTest;
+			sourceTree = "<group>";
+		};
+		B8A43A6827BBC94600CD8AD7 /* PostsTest */ = {
+			isa = PBXGroup;
+			children = (
+				B8A43A6927BBC95500CD8AD7 /* ControllerTest */,
+				B8A43A6A27BBC96900CD8AD7 /* PostsViewModelTest.swift */,
+			);
+			path = PostsTest;
+			sourceTree = "<group>";
+		};
+		B8A43A6927BBC95500CD8AD7 /* ControllerTest */ = {
+			isa = PBXGroup;
+			children = (
+				B8A43A6C27BBC98400CD8AD7 /* PostsViewControllerTests.swift */,
+			);
+			path = ControllerTest;
 			sourceTree = "<group>";
 		};
 		B8DE012727BBAF3D00F1463E /* Application */ = {
@@ -345,8 +377,11 @@
 		B8E87B1027BBAD420043C587 /* PostsTests */ = {
 			isa = PBXGroup;
 			children = (
+				B8A43A6827BBC94600CD8AD7 /* PostsTest */,
+				B8A43A6727BBC92B00CD8AD7 /* NetworkServiceTest */,
 				B8E87B1127BBAD420043C587 /* PostsTests.swift */,
 				B8E87B1327BBAD420043C587 /* Info.plist */,
+				B8A43A7027BBCA5F00CD8AD7 /* BaseViewModelTest.swift */,
 			);
 			path = PostsTests;
 			sourceTree = "<group>";
@@ -645,7 +680,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8A43A7127BBCA5F00CD8AD7 /* BaseViewModelTest.swift in Sources */,
+				B8A43A6B27BBC96900CD8AD7 /* PostsViewModelTest.swift in Sources */,
 				B8E87B1227BBAD420043C587 /* PostsTests.swift in Sources */,
+				B8A43A6F27BBC9FE00CD8AD7 /* NetworkServiceTest.swift in Sources */,
+				B8A43A6D27BBC98400CD8AD7 /* PostsViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

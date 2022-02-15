@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-   
     func fectchUserToken(userName: String = "", password: String = "") {
         if !KeyChainManager.shared.accessToken.isEmpty {
             return
